@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS - Assignment 3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #first-div {
+            height: 600px;
+            width: 600px;
+            margin: 0 auto;
+            box-shadow: -7px 0px 2px 9px #f7f0f0, -20px 0px 0px 4px #000;
+            position: relative;
+
+
+        }
+
+        #first-div img {
+            width: 30%;
+            border: 1px solid rgb(243, 148, 255);
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        #first-div h4 {
+            display: inline;
+            position: absolute;
+            right: 15px;
+            margin: 0;
+            top: 40px;
+            font-size: 20px;
+
+        }
+
+        #first-div a {
+            position: absolute;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #first-div a[href="https://www.google.rs/"] {
+            top: 45px;
+            margin-left: 30%;
+            transition: color 0.2s;
+        }
+
+        #first-div a[href="https://www.google.rs/"]:hover {
+            color: rgb(243, 148, 255);
+        }
+
+        #first-div a[href="https://www.wikipedia.org/"] {
+            top: 45px;
+            margin-left: 10%;
+        }
+
+        #first-div a[href="https://www.wikipedia.org/"]:active {
+            color: rgb(145, 3, 163);
+        }
+
+        #second-div h2 {
+            margin-left: 10px;
+            border-bottom: 2px solid black;
+            width: 25%;
+            padding-left: 10px;
+        }
+
+        #second-div p {
+            width: 95%;
+            margin-left: 15px;
+        }
+
+        #second-div p:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #second-div p:nth-child(3) {
+            background-color: #e6f2ff;
+        }
+
+        #second-div p::first-letter {
+            font-weight: bold;
+        }
+
+        #first-div span {
+            float: right;
+            background-color: #e6f2ff;
+            margin-right: 20px;
+            position: relative;
+            padding: 1px 20px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        #first-div span::after {
+            content: '02.01.2022';
+            position: absolute;
+            bottom: -25px;
+            left: -12px;
+            font-size: 20px;
+            color: rgb(243, 148, 255);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first-div">
+
+        <img src="Portrait.png">
+        <h4>Lorem Ipsum</h4>
+        <a href="https://www.google.rs/"> Google</a>
+        <a href="https://www.wikipedia.org/">Wikipedia</a>
+
+        <div id="second-div">
+
+
+
+            <h2>Poglavlje</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <span>
+            <p>Datum</p>
+        </span>
+    </div>
+</body>
+
+</html>
